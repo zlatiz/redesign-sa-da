@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-container": "#ffffff",
+              "on-surface": "#1a1c1c",
+              "on-secondary-fixed": "#1c1b1d",
+              "error-container": "#ffdad6",
+              "error": "#ba1a1a",
+              "on-surface-variant": "#474747",
+              "on-background": "#1a1c1c",
+              "inverse-surface": "#2f3131",
+              "inverse-primary": "#c8c5ca",
+              "surface": "#f9f9f9",
+              "surface-variant": "#e2e2e2",
+              "secondary": "#5f5e60",
+              "on-primary": "#e4e1e6",
+              "surface-bright": "#f9f9f9",
+              "secondary-container": "#d6d3d6",
+              "on-primary-fixed": "#ffffff",
+              "surface-dim": "#dadada",
+              "on-primary-fixed-variant": "#e4e1e6",
+              "on-tertiary-fixed-variant": "#e2e1eb",
+              "primary-fixed": "#5f5e61",
+              "on-error": "#ffffff",
+              "on-secondary-fixed-variant": "#3c3b3d",
+              "secondary-fixed-dim": "#adaaad",
+              "surface-container": "#eeeeee",
+              "inverse-on-surface": "#f0f1f1",
+              "on-tertiary-fixed": "#ffffff",
+              "surface-container-high": "#e8e8e8",
+              "primary": "#000000",
+              "surface-tint": "#5f5e61",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#777777",
+              "background": "#f9f9f9",
+              "on-secondary": "#ffffff",
+              "primary-container": "#3b3b3e",
+              "outline-variant": "#c6c6c6",
+              "surface-container-highest": "#e2e2e2",
+              "on-error-container": "#410002",
+              "on-secondary-container": "#1c1b1d",
+              "surface-container-low": "#f3f3f4",
+              "tertiary-container": "#73747c",
+              "secondary-fixed": "#c8c6c8",
+              "tertiary-fixed": "#5d5e66",
+              "primary-fixed-dim": "#47464a",
+              "on-tertiary": "#e2e1eb",
+              "tertiary-fixed-dim": "#45464e",
+              "tertiary": "#3a3b42",
+              "on-tertiary-container": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .editorial-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 2rem;
+      }
+      .project-card:nth-child(even) {
+        margin-top: 4rem;
+      }
+      .glass-effect {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-tertiary-container selection:text-white" style="overflow-x:hidden">
+<!-- TopNavBar -->
+<nav class="w-full max-w-[1440px] flex justify-between items-center px-8 py-6 bg-white/80 dark:bg-black/80 backdrop-blur-xl">
+<div class="font-manrope text-2xl font-black tracking-tighter text-zinc-900 dark:text-zinc-100">SA-DA</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-manrope tracking-tight font-bold uppercase text-xs text-zinc-900 dark:text-white border-b-2 border-zinc-900 dark:border-white pb-1" href="/">Home</a>
+<a class="font-manrope tracking-tight font-bold uppercase text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="/projects/">Projects</a>
+<a class="font-manrope tracking-tight font-bold uppercase text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="/about/">About</a>
+<a class="font-manrope tracking-tight font-bold uppercase text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="/contact/">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-manrope tracking-tight font-bold uppercase text-xs hover:bg-primary-container transition-all duration-300">
+                Consultation
+            </button>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-[1440px] mx-auto">
+<!-- Hero Header -->
+<header class="mb-24 md:mb-32">
+<h1 class="font-headline text-5xl md:text-8xl font-extrabold tracking-tight text-on-surface leading-tight max-w-4xl">
+                PROJECTS <span class="text-tertiary">/</span> SELECTED WORKS
+            </h1>
+<div class="mt-12 editorial-grid">
+<p class="col-span-12 md:col-start-5 md:col-span-4 text-on-surface-variant font-body leading-relaxed text-lg">
+                    A collection of residential and commercial spaces that redefine the Brooklyn architectural landscape. Each site is approached as a monolithic canvas, balancing raw materiality with precision engineering.
+                </p>
+</div>
+</header>
+<!-- Project Editorial Grid -->
+<div class="editorial-grid">
+<!-- Project 1: Large Featured -->
+<div class="col-span-12 md:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-[16/10]">
+<img alt="Brooklyn Loft Interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interior of a minimalist Brooklyn loft with soaring ceilings, exposed concrete beams, and large industrial windows in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS1ynUL34W9McQYo5Dx6Usye_zlU7HD1Q7GHZdLYkMG5KSWhMscvuGtaIpnNVcxD6bQIp6CKjjfSOObSrrxZtd1NaR6exhy87yAVPpIG7u8Qq653R3GAqptU04B-Yrk9ytUPjM1Gcxwf3Rbz2fPzkDVLKV6whg_qQKLyZhtz8YfYLp3Ep8ct9cm7V46Wu4_S4PdrVeb6HFEY7xM1KrIWNn-n67nDAqUmQ6AHUQU0ic8Su_y6VzKR053PLAvOkryXZT11VuO2iWAlQ"/>
+<div class="absolute bottom-0 left-0 p-8 glass-effect bg-white/40 w-full md:w-auto">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant mb-2 block">01 / RESIDENTIAL</span>
+<h3 class="font-headline text-2xl font-bold text-on-surface">BED-STUY MONOLITH</h3>
+</div>
+</div>
+</div>
+<!-- Project 2: Tall Asymmetric -->
+<div class="col-span-12 md:col-span-4 mt-12 md:mt-24 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-[3/4]">
+<img alt="Modern Townhouse Exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a contemporary charcoal brick townhouse facade with precision-aligned windows and architectural shadows at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJY0wfPYhGZzQ9f4DxEtj9gafnACLjLbVJFoOg55RUvKGb0Tye0NQSvkZ-MmCiBLd_y0F8FY9vcxqQnIQBOHb_HLanydbir3ks2DtR0kcNxSNzjdvbscy3kPbui-_lt49xySwjhtoGG1y31yL9xbb2aMrrYt3ChcRoFo9latT60ompcn0BXvgVsU-OvA6HlClWJK0oYNU6ZEgjQ1j_FUqMVbc2ZjqCm_rcGeK4tZa7qgVzXygCpUzjb2cyyQJovTmGUzRTRkfqJ0I"/>
+<div class="mt-6">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant mb-1 block">02 / TOWNHOUSE</span>
+<h3 class="font-headline text-xl font-bold text-on-surface">CLINTON HILL REVIVAL</h3>
+<p class="mt-4 text-on-surface-variant text-sm leading-relaxed max-w-xs">Restoring a 19th-century facade while inserting a modern, brutalist steel and glass core.</p>
+<div class="mt-6 inline-flex items-center space-x-2 bg-secondary-container px-3 py-1">
+<span class="font-label text-[10px] uppercase font-bold text-on-secondary-fixed">4,200 SQ FT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 3: Wide Layout -->
+<div class="col-span-12 md:col-start-2 md:col-span-10 mt-12 md:mt-0 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-[21/9]">
+<img alt="Commercial Space" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Vast open-plan commercial office space with polished concrete floors and minimalist white workstation clusters in high-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd0KmhGFVIvzKBPjLVIVwOFp_OjdWHbIcsqqU-_o2W4YIQ2ZaFdsxMKm7RUiCGu5aKZsR_RLEMHzMdc6Q_BqpjucDio_3lev9JI84W20O0S9NPyTzZ4YT5YulDZjIwOcEbSMApBC9LH24Cdsy4EnggXGSMIZBeTQ3o-BOgfyGORHnGRXLt9HxKj1zmhglVta83IgawU2Cutd1lzcdkwY-5rLlFBIIF9AQXlJWaBNCHCxoTlQwQ0NkdBwVOMwrQk55SGuJiFReWlqI"/>
+</div>
+<div class="mt-8 flex flex-col md:flex-row md:justify-between items-start md:items-end">
+<div>
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant mb-1 block">03 / COMMERCIAL</span>
+<h3 class="font-headline text-3xl font-bold text-on-surface">DUMBO TECH CANVAS</h3>
+</div>
+<p class="mt-4 md:mt-0 md:max-w-md text-on-surface-variant text-sm leading-relaxed">
+                        A former warehouse converted into a fluid collaborative environment for a global creative agency. Minimal partitions, maximum spatial volume.
+                    </p>
+</div>
+</div>
+<!-- Project 4: Square Grid -->
+<div class="col-span-12 md:col-span-6 mt-12 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-square">
+<img alt="Brutalist Structure" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Low angle shot of a brutalist inspired residential building with jagged concrete balconies against a stark clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRuym3SQwERQ9SaKZ8q9wUPAM6WJ5bEUFW0AluAaP4UTeRcINVK-l5uwy2fku6as-F_vd2X4DkECTn8UDONWkSoH893C8YCm3gdS6lNIga4sXx4a-ZDQODL6S4QCLduj-oozlfpH11eqpy2KDs7MW6X5_38QCKVHy2m8CELKCOMUpg_Ewf2Q1N3yIt_552C7yBUDIWDV2i-orOrMqAMJR4HWi5pVtzaY2ustMhINtu8UceOA8BG_KWlWYOdckzIZimQRNjx-YmBsI"/>
+<div class="absolute inset-0 bg-on-surface/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="mt-6">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant mb-1 block">04 / MULTI-FAMILY</span>
+<h3 class="font-headline text-xl font-bold text-on-surface">THE BASALT BLOCK</h3>
+</div>
+</div>
+<!-- Project 5: Vertical Narrow -->
+<div class="col-span-12 md:col-span-5 md:col-start-8 mt-12 md:-mt-24 group cursor-pointer">
+<div class="relative overflow-hidden bg-surface-container-highest aspect-[3/4]">
+<img alt="Kitchen Detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist architectural kitchen detail with seamless marble islands and integrated light wood cabinetry in warm evening glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDikWrwyYVBHiL44u-VD6qh1pB5soCuSAmbj5JfkCzKr_O33Dknf_QbgTx6G6dd4o_Lac0dyOe3gExOemzOKyDD5F0LlAv9U4IQOUhCsIKHnLZbxwZ45UDCxvyXfkZb2Ze0-14qR-60xquahNtLHFViztl0pnYzNO0n8oz8_de7aR2GeKASJHcSKUPQI1v5DyPUpVwijCyf3tDn0VQQrD43HaPmUCOh4bEw4C2lsqkJf8mWRGBMM8q90ERKrPk438VUiC82zu7mlBk"/>
+</div>
+<div class="mt-6">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant mb-1 block">05 / INTERIORS</span>
+<h3 class="font-headline text-xl font-bold text-on-surface">GOWANUS HOUSE III</h3>
+<p class="mt-4 text-tertiary text-xs uppercase font-bold tracking-widest border-b-2 border-tertiary w-fit pb-1 hover:opacity-70 transition-opacity">View Case Study</p>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<section class="mt-48 pt-24 border-t border-outline-variant/15 text-center">
+<h2 class="font-headline text-4xl md:text-6xl font-bold text-on-surface mb-8">BUILDING THE FUTURE OF BROOKLYN</h2>
+<button class="bg-tertiary text-on-tertiary px-12 py-5 font-manrope tracking-widest uppercase text-sm font-bold hover:bg-tertiary-dim transition-colors">
+                Start a Conversation
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-950 dark:bg-black w-full flex flex-col md:flex-row justify-between items-end px-8 py-12 gap-8 border-t border-white/5">
+<div class="flex flex-col items-start gap-8 w-full md:w-auto">
+<div class="text-zinc-100 font-manrope font-bold tracking-tighter text-3xl">SA-DA</div>
+<p class="text-zinc-500 font-inter text-[10px] uppercase tracking-[0.1rem] leading-relaxed max-w-xs">
+                © 2024 SA-DA Architecture. 68 Jay Street, Suite 610, Brooklyn, NY 11201
+            </p>
+</div>
+<div class="flex flex-wrap gap-8 md:gap-12">
+<a class="font-inter text-[10px] uppercase tracking-[0.1rem] leading-relaxed text-zinc-500 hover:text-zinc-200 transition-colors" href="#">Instagram</a>
+<a class="font-inter text-[10px] uppercase tracking-[0.1rem] leading-relaxed text-zinc-500 hover:text-zinc-200 transition-colors" href="#">LinkedIn</a>
+<a class="font-inter text-[10px] uppercase tracking-[0.1rem] leading-relaxed text-zinc-500 hover:text-zinc-200 transition-colors" href="#">Journal</a>
+<a class="font-inter text-[10px] uppercase tracking-[0.1rem] leading-relaxed text-zinc-500 hover:text-zinc-200 transition-colors" href="#">Privacy</a>
+</div>
+</footer>
+</body></html>
